@@ -1,0 +1,24 @@
+oot@ip-172-31-81-7:~/spring-boot-websocket-chat-demo# history
+    1  apt-get update
+    2  apt-get install     ca-certificates     curl     gnupg     lsb-release
+    3  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+    4  apt-get update
+    5  apt-get install docker-ce docker-ce-cli containerd.io
+    6  docker ps
+   
+    8  apt install git
+    9  apt install unzip
+   10  javac
+   11  apt install default-jdk
+   12  javac
+   13  apt install maven
+   14  mvn version
+   15  git clone https://github.com/callicoder/spring-boot-websocket-chat-demo.git
+   16  cd spring-boot-websocket-chat-demo/
+   17  mvn package
+   18  ls
+   19  cd target/
+   20  ls
+   
+   22  cd ..
+ 
