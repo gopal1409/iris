@@ -22,4 +22,34 @@ oot@ip-172-31-81-7:~/spring-boot-websocket-chat-demo# history
    20  ls
    
    22  cd ..
- 
+ -----
+  30  vi dockerfile
+  once it is open
+  Press the ESC key in your keyboard then press i in keyboard
+  copy the below content
+  
+ #we will start with a base image containing java runtime.
+FROM openjdk:11
+
+MAINTAINER Gopal Das<gopal1409@gmail.com>
+
+#add a volume pointing to temp directory
+VOLUME /tmp
+
+#make port 8080 avaialbe to thge world outside the container
+EXPOSE 8080
+
+ARG JAR_FILE=target/websocket-demo-0.0.1-SNAPSHOT.jar
+
+#add this jar file to the container
+ADD ${JAR_FILE} websocket-demo.jar
+#run the jar file
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/websocket-demo.jar"]
+
+once copied right click on the docker file it will be pasted
+then press ESC key in your keyboard
+then Press :wq
+to verfiy that everything is copied properly
+cat dockerfile
+docker build -t chatapp .
+docker images
