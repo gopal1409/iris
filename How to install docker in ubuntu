@@ -13,7 +13,7 @@ oot@ip-172-31-81-7:~/spring-boot-websocket-chat-demo# history
    11  apt install default-jdk
    12  javac
    13  apt install maven
-   14  mvn version
+   14  mvn -version
    15  git clone https://github.com/callicoder/spring-boot-websocket-chat-demo.git
    16  cd spring-boot-websocket-chat-demo/
    17  mvn package
