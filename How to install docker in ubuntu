@@ -56,3 +56,11 @@ docker images
 to run this as container
 30  docker run -p 8080:8080 -d chatapp
 docker ps
+
+How to install aws cli
+48  docker ps
+   49  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+   50  unzip awscliv2.zip
+   51  sudo ./aws/install
+   52  aws --version
+   53  aws configure
