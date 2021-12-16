@@ -53,3 +53,6 @@ to verfiy that everything is copied properly
 cat dockerfile
 docker build -t chatapp .
 docker images
+to run this as container
+30  docker run -p 8080:8080 -d chatapp
+docker ps
